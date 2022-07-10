@@ -70,3 +70,45 @@ body {
     border-radius: 6px;
     padding: 10px 0;
 }
+
+@media screen and (max-width: 1600px) {
+    #title h1 {
+        font-size: 48px;
+    }
+    #title h2 {
+        font-size: 36px;
+    }
+    #character {
+        font-size: 32px;
+    }
+    #character h3 {
+        padding: 12px 35px;
+    }
+    .cad-name {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .cad {
+        width: calc(50% - 50px);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #title h1 {
+        font-size: 36px;
+    }
+    #title h2 {
+        font-size: 26px;
+    }
+    #character {
+        font-size: 22px;
+    }
+    #character h3 {
+        padding: 12px 30px;
+    }
+    .cad {
+        width: calc(100% - 50px);
+    }
+}
