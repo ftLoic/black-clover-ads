@@ -1,0 +1,72 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik';
+    background-color: rgb(20, 20, 25);
+    color: white;
+}
+#header {
+    background-color: rgb(10, 10, 15);
+}
+#title, #character {
+    text-align: center;
+}
+#title h1 {
+    font-size: 64px;
+    margin: 0;
+    padding: 30px 0 0 0;
+}
+#title h2 {
+    font-size: 48px;
+    margin: 0;
+    padding: 0 0 30px 0;
+}
+#character {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+#character h3 {
+    margin: 0 auto;
+    width: min-content;
+    background-color: rgb(20, 20, 25);
+    padding: 15px 50px;
+}
+#main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cad {
+    width: calc(33% - 50px);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.cad-collection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.cad-collection img {
+    width: calc(50% - 10px);
+    margin-bottom: 7px;
+    border-radius: 6px;
+    transition: 0.2s transform;
+    z-index: 1;
+    cursor: pointer;
+}
+.cad-collection img:hover {
+    transform: scale(1.25);
+    z-index: 2;
+}
+.cad-name {
+    width: calc(100% - 12px);
+    margin: 2px auto;
+    font-size: 28px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 10px 0;
+}
