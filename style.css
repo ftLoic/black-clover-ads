@@ -37,7 +37,6 @@ body {
 #menu .active {
     background-color: rgb(20, 20, 25);
     font-weight: 600;
-    font-size: 42px;
 }
 #main {
     display: flex;
@@ -90,11 +89,9 @@ body {
     #title h2 {
         font-size: 36px;
     }
-    #menu {
-        font-size: 32px;
-    }
-    #menu .active {
+    #menu .menu {
         padding: 12px 35px;
+        font-size: 32px;
     }
     .cad-name {
         font-size: 20px;
@@ -114,11 +111,9 @@ body {
     #title h2 {
         font-size: 26px;
     }
-    #menu {
-        font-size: 22px;
-    }
-    #menu .active {
+    #menu .menu {
         padding: 12px 30px;
+        font-size: 22px;
     }
     .cad {
         width: calc(100% - 50px);
