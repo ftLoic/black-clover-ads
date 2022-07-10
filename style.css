@@ -8,7 +8,7 @@ body {
 #header {
     background-color: rgb(10, 10, 15);
 }
-#title, #character {
+#title, #menu {
     text-align: center;
 }
 #title h1 {
@@ -21,15 +21,23 @@ body {
     margin: 0;
     padding: 0 0 30px 0;
 }
-#character {
-    font-size: 42px;
+#menu {
+    display: flex;
     margin-bottom: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
 }
-#character h3 {
-    margin: 0 auto;
-    width: min-content;
-    background-color: rgb(20, 20, 25);
+#menu .menu {
     padding: 15px 50px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+#menu .active {
+    background-color: rgb(20, 20, 25);
+    font-weight: 600;
+    font-size: 42px;
 }
 #main {
     display: flex;
@@ -63,12 +71,16 @@ body {
     z-index: 2;
 }
 .cad-name {
+    display: block;
     width: calc(100% - 12px);
     margin: 2px auto;
     font-size: 28px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 6px;
     padding: 10px 0;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1600px) {
@@ -78,10 +90,10 @@ body {
     #title h2 {
         font-size: 36px;
     }
-    #character {
+    #menu {
         font-size: 32px;
     }
-    #character h3 {
+    #menu .active {
         padding: 12px 35px;
     }
     .cad-name {
@@ -102,10 +114,10 @@ body {
     #title h2 {
         font-size: 26px;
     }
-    #character {
+    #menu {
         font-size: 22px;
     }
-    #character h3 {
+    #menu .active {
         padding: 12px 30px;
     }
     .cad {
