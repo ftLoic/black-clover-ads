@@ -30,7 +30,7 @@ body {
 }
 #menu .menu {
     padding: 15px 50px;
-    font-size: 30px;
+    font-size: 28px;
     text-decoration: none;
     color: white;
 }
@@ -91,7 +91,7 @@ body {
     }
     #menu .menu {
         padding: 12px 35px;
-        font-size: 32px;
+        font-size: 24px;
     }
     .ad-name {
         font-size: 20px;
@@ -112,8 +112,8 @@ body {
         font-size: 26px;
     }
     #menu .menu {
-        padding: 12px 30px;
-        font-size: 22px;
+        padding: 12px 20px;
+        font-size: 18px;
     }
     .ad {
         width: calc(100% - 50px);
