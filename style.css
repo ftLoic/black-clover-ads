@@ -45,19 +45,19 @@ body {
     justify-content: space-around;
 }
 
-.cad {
+.ad {
     width: calc(33% - 50px);
     text-align: center;
     margin-bottom: 50px;
 }
-.cad-collection {
+.ad-collection {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
 }
-.cad-collection img {
+.ad-collection img {
     width: calc(50% - 10px);
     margin-bottom: 7px;
     border-radius: 6px;
@@ -65,11 +65,11 @@ body {
     z-index: 1;
     cursor: pointer;
 }
-.cad-collection img:hover {
+.ad-collection img:hover {
     transform: scale(1.25);
     z-index: 2;
 }
-.cad-name {
+.ad-name {
     display: block;
     width: calc(100% - 12px);
     margin: 2px auto;
@@ -93,13 +93,13 @@ body {
         padding: 12px 35px;
         font-size: 32px;
     }
-    .cad-name {
+    .ad-name {
         font-size: 20px;
     }
 }
 
 @media screen and (max-width: 1280px) {
-    .cad {
+    .ad {
         width: calc(50% - 50px);
     }
 }
@@ -115,7 +115,7 @@ body {
         padding: 12px 30px;
         font-size: 22px;
     }
-    .cad {
+    .ad {
         width: calc(100% - 50px);
     }
 }
