@@ -101,6 +101,19 @@ body {
     z-index: 2;
 }
 
+footer {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(10, 10, 15);
+    color: white;
+}
+footer a {
+    color: rgb(200, 40, 40);
+}
+
 @media screen and (max-width: 1600px) {
     #title h1 {
         font-size: 48px;
