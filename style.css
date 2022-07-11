@@ -67,9 +67,10 @@ body {
 }
 .ad-collection img:hover {
     transform: scale(1.25);
-    z-index: 2;
+    z-index: 3;
 }
 .ad-name {
+    position: relative;
     display: block;
     width: calc(100% - 12px);
     margin: 2px auto;
@@ -80,6 +81,24 @@ body {
     color: white;
     font-weight: 600;
     text-decoration: none;
+}
+.presumed::after {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    content: '?';
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 3px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgb(200, 40, 40);
+    color: white;
+    z-index: 2;
 }
 
 @media screen and (max-width: 1600px) {
