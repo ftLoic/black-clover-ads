@@ -141,18 +141,27 @@ footer a {
     .ad {
         width: calc(50% - 50px);
     }
+    #menu .menu {
+        padding: 12px 24px;
+        font-size: 19px;
+    }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     #title h1 {
         font-size: 36px;
     }
     #title h2 {
         font-size: 26px;
     }
+    #menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     #menu .menu {
-        padding: 10px 12px;
-        font-size: 17px;
+        box-sizing: border-box;
+        width: 50%;
+        font-size: 16px;
     }
     .ad {
         width: calc(100% - 50px);
