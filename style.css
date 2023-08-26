@@ -65,7 +65,7 @@ body {
     width: 100%;
 }
 .ad-collection img {
-    width: calc(50% - 10px);
+    width: calc(33% - 10px);
     margin-bottom: 7px;
     border-radius: 6px;
     transition: 0.2s transform;
@@ -81,7 +81,7 @@ body {
     display: block;
     width: calc(100% - 12px);
     margin: 2px auto;
-    font-size: 28px;
+    font-size: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 6px;
     padding: 10px 0;
