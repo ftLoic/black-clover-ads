@@ -26,7 +26,6 @@ body {
 }
 #menu {
     display: flex;
-    margin-bottom: 30px;
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
@@ -34,7 +33,7 @@ body {
 }
 #menu .menu {
     padding: 15px 50px;
-    font-size: 28px;
+    font-size: 26px;
     text-decoration: none;
     color: white;
 }
@@ -46,48 +45,53 @@ body {
     font-weight: 600;
 }
 #main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 80px;
+    padding: 50px;
 }
 
 .ad {
-    width: calc(33% - 50px);
-    text-align: center;
-    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
 }
 .ad-collection {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
     width: 100%;
+    display: grid;
+    /* 3 cols */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
 }
 .ad-collection img {
-    width: calc(33% - 10px);
-    margin-bottom: 7px;
+    width: 100%;
     border-radius: 6px;
-    transition: 0.2s transform;
+    transition: 0.15s ease transform;
     z-index: 1;
     cursor: pointer;
 }
 .ad-collection img:hover {
-    transform: scale(1.25);
+    transform: scale(1.05);
     z-index: 3;
+}
+.full-width {
+    grid-column: span 3;
 }
 .ad-name {
     position: relative;
     display: block;
-    width: calc(100% - 12px);
-    margin: 2px auto;
+    width: 100%;
     font-size: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 6px;
+    margin: 0px;
     padding: 10px 0;
     color: white;
     font-weight: 600;
     text-decoration: none;
+    text-align: center;
 }
 .presumed::after {
     position: absolute;
@@ -121,49 +125,38 @@ footer a {
     color: rgb(200, 40, 40);
 }
 
-@media screen and (max-width: 1600px) {
+/* Responsive */
+@media screen and (max-width: 1480px) {
     #title h1 {
         font-size: 48px;
     }
     #title h2 {
         font-size: 36px;
     }
+    #main {
+        grid-template-columns: repeat(2, 1fr);
+    }
     #menu .menu {
-        padding: 12px 35px;
+        padding: 10px 30px;
         font-size: 24px;
     }
-    .ad-name {
-        font-size: 20px;
-    }
 }
-
-@media screen and (max-width: 1280px) {
-    .ad {
-        width: calc(50% - 50px);
-    }
-    #menu .menu {
-        padding: 12px 24px;
-        font-size: 19px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 960px) {
     #title h1 {
         font-size: 36px;
     }
     #title h2 {
-        font-size: 26px;
+        font-size: 28px;
+    }
+    #main {
+        grid-template-columns: 1fr;
     }
     #menu {
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     #menu .menu {
-        box-sizing: border-box;
-        width: 50%;
-        font-size: 16px;
-    }
-    .ad {
-        width: calc(100% - 50px);
+        width: 100%;
     }
 }
